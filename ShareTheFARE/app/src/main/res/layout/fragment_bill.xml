@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/billFragDes"
+    android:textSize="40dp"
+    android:text="KFC"
+    android:gravity="center"
+    android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFrag2"
+        android:textSize="20dp"
+        android:text="Amount"
+        android:gravity="right"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFragAm"
+        android:textSize="20dp"
+        android:text="200"
+        android:gravity="right"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFrag3"
+        android:textSize="20dp"
+        android:text="Paid By:"
+        android:gravity="right"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFragPBy"
+        android:textSize="20dp"
+        android:text="Pavana"
+        android:gravity="right"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFrag4"
+        android:textSize="20dp"
+        android:text="People Involved: "
+        android:gravity="right"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFrag5"
+        android:textSize="20dp"
+        android:text="Expense On Each: "
+        android:gravity="right"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/billFragExpense"
+        android:textSize="20dp"
+        android:text="100"
+        android:gravity="right"
+       />
+</LinearLayout>

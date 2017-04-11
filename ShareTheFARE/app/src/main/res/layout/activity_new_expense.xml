@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_expense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ashwanigupta.sharethefare.Activities.NewExpense">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBillName"
+        android:text="Bill Name"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/etBillName"/>
+    <TextView
+        android:text="Total Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvExpenseTop"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/btnSaveExpense"
+        android:layout_alignEnd="@+id/btnSaveExpense"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/etTotalExpense"
+        android:text="0"
+        android:layout_below="@+id/tvExpenseTop"
+        android:layout_alignLeft="@+id/btnSaveExpense"
+        android:layout_alignStart="@+id/btnSaveExpense" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFriends"
+        android:text="Friends: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/etTotalExpense"
+        android:layout_above="@+id/btnSaveExpense"
+        android:id="@+id/lvToAddExp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/tvPaidBy"
+        android:text="Paid By:"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPaidBy"
+        android:text="Add Paid By"></Button>
+
+    <Button
+        android:text="Save Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveExpense"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"/>
+
+</LinearLayout>

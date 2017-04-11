@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ashwanigupta.sharethefare.Activities.MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="380dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btnFrndAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Add More Friends"
+                    android:layout_weight="1"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/colorAccent" />
+
+                <Button
+                    android:id="@+id/btnExpenseAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/btnFrndAdd"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/btnFrndAdd"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="Add Expense"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnBillView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="View bills"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/colorAccent" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
